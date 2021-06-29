@@ -1,7 +1,7 @@
-function [ J, cellW ] = neuralNetwork(X, hidden, y, iteration, alpha, cellW)
+function [ J, cellW ] = neuralNetwork(X, cellW, y, iteration, alpha)
 
   cellWLength = size(cellW, 2);
-  
+
   for it = 1:iteration
 
     [ J, gradient ] = costFunction(X, cellW, y);
