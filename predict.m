@@ -1,10 +1,8 @@
 function prediction =  predict(x, cellW)
 
-  prediction = 0;
+  cellA = forwardProp(cellW, x);
+
   cellWLength = size(cellW, 2);
-
-  [ cellZ, cellA ] = forwardProp(cellW, x);
-
   a = cellA{cellWLength + 1};
 
   prediction =  a >= 0.5;

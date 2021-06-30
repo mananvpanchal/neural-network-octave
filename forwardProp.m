@@ -1,4 +1,4 @@
-function [ cellZ, cellA ] = forwardProp(cellW, a)
+function [ cellA, cellZ ] = forwardProp(cellW, a)
 
   cellA = cell();
   cellZ = cell();

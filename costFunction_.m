@@ -1,6 +1,6 @@
 function [ C, grad ] = costFunction_(x, cellW, y)
 
-  [ cellZ, cellA ] = forwardProp(cellW, x);
+  [ cellA, cellZ ] = forwardProp(cellW, x);
 
   cellWLength = size(cellW, 2);
   a = cellA{cellWLength + 1};

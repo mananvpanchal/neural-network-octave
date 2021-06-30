@@ -13,6 +13,7 @@ function [ J, cellW ] = neuralNetwork(X, cellW, y, iteration, alpha)
     end
 
     printf('Cost %f at iteration %d\n', J, it);
+    
   end
 
 end

@@ -1,7 +1,9 @@
-function g = sigmoidGradient(z)
+function delA_z = sigmoidGradient(z)
 
-  g = zeros(size(z));
+  delA_z = zeros(size(z));
 
-  g = sigmoid(z) .* (1 - sigmoid(z));
+  g = sigmoid(z);
+
+  delA_z = g .* (1 - g);
 
 end
