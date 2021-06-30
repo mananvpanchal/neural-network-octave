@@ -1,4 +1,4 @@
-function grad = backwardProp2(cellW, cellZ, cellA, delC_a)
+function grad = backwardProp(cellW, cellZ, cellA, delC_a)
 
   grad = cell();
 
