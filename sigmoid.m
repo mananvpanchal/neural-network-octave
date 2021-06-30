@@ -1,5 +1,5 @@
-function g = sigmoid(z)
+function a = sigmoid(z)
 
-  g = 1 ./ ( 1 + (1 ./ (e .^ z)));
+  a = 1 ./ ( 1 + (1 ./ (e .^ z)));
 
 end
