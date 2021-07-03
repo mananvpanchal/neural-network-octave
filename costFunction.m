@@ -14,7 +14,7 @@ function [ J, gradient ] = costFunction(X, cellW, y)
 
     [ C, grad ] = costFunction_(X(mi, :)', cellW, y(mi, :)');
 
-    J = J + sum(sum(C));
+    J = J + C;
 
     for l = 1:cellWLength
       gradient{l} = gradient{l} + grad{l};
