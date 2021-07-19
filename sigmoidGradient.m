@@ -1,8 +1,4 @@
-function delA_z = sigmoidGradient(z)
-
-  delA_z = zeros(size(z));
-
-  a = sigmoid(z);
+function delA_z = sigmoidGradient(a)
 
   delA_z = a .* (1 - a);
 

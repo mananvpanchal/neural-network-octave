@@ -3,7 +3,7 @@ function [ cellA, cellZ ] = forwardProp(cellW, a)
   cellA = cell(); % creating new cell for 'a' vectors
   cellZ = cell(); % creating new cell for 'z' vectors
 
-  cellZ{1} = zeros(size(a), 1); % creating 'z' vector with size of a with zeros
+  cellZ{1} = zeros(size(a), 1); % creating 'z' vector with size of a with zeros (as inpput layer does not have 'z')
   cellA{1} = a; % creating copy of 'a' vector
 
   cellWLength = size(cellW, 2);
