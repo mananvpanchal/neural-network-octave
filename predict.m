@@ -1,6 +1,6 @@
-function prediction =  predict(x, cellW)
+function prediction =  predict(x, cellW, displayFn = @defaultDisplay)
 
-  cellA = forwardProp(cellW, x);
+  cellA = forwardProp(cellW, x, displayFn);
 
   cellWLength = size(cellW, 2);
   a = cellA{cellWLength + 1};

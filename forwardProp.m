@@ -1,4 +1,6 @@
-function [ cellA, cellZ ] = forwardProp(cellW, a)
+function [ cellA, cellZ ] = forwardProp(cellW, a, displayFn)
+
+  displayFn(a);
 
   cellA = cell(); % creating new cell for 'a' vectors
   cellZ = cell(); % creating new cell for 'z' vectors
@@ -17,6 +19,8 @@ function [ cellA, cellZ ] = forwardProp(cellW, a)
 
     cellZ{l + 1} = z; % setting calculated 'z' vector to next index in cell
     cellA{l + 1} = a; % setting calculated 'z' vector to next index in cell
+
+    displayFn(cellA{l + 1});
 
   end
 
