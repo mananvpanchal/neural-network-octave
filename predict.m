@@ -5,6 +5,6 @@ function prediction =  predict(x, cellW, displayFn = @defaultDisplay)
   cellWLength = size(cellW, 2);
   a = cellA{cellWLength + 1};
 
-  prediction =  a >= 0.5;
+  prediction = a;
 
 end

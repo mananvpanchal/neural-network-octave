@@ -7,6 +7,8 @@ function pred = evaluation(X, cellW, y)
 
   for mi = 1:m
     prediction = predict(X(mi, :)', cellW);
+    prediction(prediction > 0.5) = 1;
+    prediction(prediction <= 0.5) = 0;
     if sum(prediction == y(mi, :)') == length(prediction)
       p(mi, :) = 1;
     end;

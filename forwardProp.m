@@ -1,4 +1,4 @@
-function [ cellA, cellZ ] = forwardProp(cellW, a, displayFn)
+function [ cellA, cellZ ] = forwardProp(cellW, a, displayFn = @defaultDisplay)
 
   displayFn(a);
 

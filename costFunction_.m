@@ -1,6 +1,6 @@
 function [ C, grad ] = costFunction_(x, cellW, y)
 
-  [ cellA, cellZ ] = forwardProp(cellW, x); % forward propogation returns cell of activation vectors and 'z' vectors
+  [ cellA, cellZ ] = forwardProp(cellW, x, @defaultDisplay); % forward propogation returns cell of activation vectors and 'z' vectors
 
   cellWLength = size(cellW, 2);
   a = cellA{cellWLength + 1}; % geting last activation vector
